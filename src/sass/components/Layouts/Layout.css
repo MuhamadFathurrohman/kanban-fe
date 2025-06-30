@@ -1,0 +1,41 @@
+@charset "UTF-8";
+.layout-container {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  height: 100lvh;
+  width: 100lvw;
+}
+
+.main-content {
+  background-color: rgba(226, 242, 252, 0.95);
+  background-size: cover;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(249, 249, 249, 0.45);
+  box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.22);
+  border-radius: 6px 6px 0px 6px;
+  width: 100vw;
+  height: 100vh;
+  margin-left: 252px;
+  margin-top: 12px;
+}
+
+/* === RESPONSIVE UNTUK LAYAR KECIL (MOBILE / ≤768px) === */
+@media (max-width: 1100px) {
+  .layout-container {
+    flex-direction: column;
+    height: auto;
+  }
+  .page-container {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 8px;
+    height: 100vh;
+    border-radius: 6px;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=Layout.css.map */

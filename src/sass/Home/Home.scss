@@ -1,0 +1,222 @@
+.home-wrapper {
+    width: 100vw;
+    padding-top: 50px;
+}
+
+.home-container {
+    padding-right: 210px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+
+    .loader {
+        width: 100%;
+        height: 75dvh;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+    }
+
+    .company-name {
+        font-size: 38px;
+        font-weight: bold;
+        font-style: italic;
+        color: #2b2b2b;
+        margin-bottom: 28px;
+    }
+
+    .welcome-text {
+        font-size: 20px;
+        font-weight: bold;
+        color: #2b2b2b;
+        padding: 20px 15px;
+        box-sizing: border-box;
+        max-width: fit-content;
+        margin: 0 auto 20px auto;
+        border: 1.8px solid #1c85b7;
+        border-radius: 15px;
+        line-height: 1.7; /* Untuk readability yang lebih baik */
+
+        .highlight {
+            color: #0165b9;
+        }
+
+        .highlight-role,
+        .highlight-name {
+            color: #066cb6;
+            font-weight: 700;
+        }
+
+        .highlight-dept {
+            color: #0d99d6;
+            font-weight: bold;
+        }
+    }
+
+    .request-text {
+        font-size: 20px;
+        font-weight: bold;
+        color: #1d1d1d;
+    }
+}
+
+@media (max-width: 1440px) {
+    .home-wrapper {
+        padding-top: 30px;
+    }
+
+    .home-container {
+        padding-right: calc(210px + 35px);
+
+        .company-name {
+            font-size: 33px;
+            margin-bottom: 20px;
+        }
+
+        .welcome-text {
+            font-size: 18px;
+            max-width: fit-content;
+            padding: 18px 12px;
+            margin-bottom: 18px;
+        }
+
+        .request-text {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .home-wrapper {
+        padding-top: 30px;
+    }
+
+    .home-container {
+        padding-right: calc(210px + 43px);
+
+        .company-name {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .welcome-text {
+            font-size: 17px;
+            max-width: fit-content;
+            padding: 18px 10px;
+            margin-bottom: 18px;
+        }
+
+        .request-text {
+            font-size: 17px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .home-wrapper {
+        width: 100%;
+        padding: 70px 20px;
+    }
+
+    .home-container {
+        padding: 0;
+        text-align: center;
+
+        .company-name {
+            font-size: 34px;
+            margin-bottom: 30px;
+        }
+
+        .welcome-text {
+            font-size: 18px;
+            max-width: fit-content; /* Full width dalam container */
+            padding: 18px 11px;
+            margin: 0 auto 20px auto;
+        }
+
+        .request-text {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .home-wrapper {
+        width: 100%;
+        padding: 70px 20px;
+    }
+
+    .home-container {
+        padding: 0;
+        text-align: center;
+
+        .company-name {
+            font-size: 29px;
+            margin-bottom: 20px;
+        }
+
+        .welcome-text {
+            font-size: 16px;
+            max-width: fit-content; /* Full width dalam container */
+            padding: 18px 11px;
+            margin: 0 auto 20px auto;
+        }
+
+        .request-text {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .home-wrapper {
+        width: 100%;
+        padding: 50px 16px; /* Kurangi padding untuk mobile */
+    }
+
+    .home-container {
+        padding: 0;
+        text-align: center;
+
+        .company-name {
+            font-size: 25px; /* Sedikit lebih kecil untuk mobile */
+            margin-bottom: 35px;
+        }
+
+        .welcome-text {
+            font-size: 18px; /* Lebih kecil untuk mobile */
+            max-width: fit-content;
+            padding: 16px 10px;
+            margin: 0 14px 18px 14px;
+        }
+
+        .request-text {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .home-wrapper {
+        width: 100%;
+        padding: 50px 15px; /* Kurangi padding untuk mobile */
+    }
+
+    .home-container {
+        padding: 0;
+        text-align: center;
+
+        .company-name {
+            font-size: 23px; /* Sedikit lebih kecil untuk mobile */
+        }
+
+        .welcome-text {
+            font-size: 16px; /* Lebih kecil untuk mobile */
+        }
+
+        .request-text {
+            font-size: 16px;
+        }
+    }
+}

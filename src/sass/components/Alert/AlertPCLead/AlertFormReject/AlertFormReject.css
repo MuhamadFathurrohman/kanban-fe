@@ -1,0 +1,238 @@
+/* Alert Form Approval-confirmreject /pc-lead */
+.overlay-pclead-confirmreject {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(38, 37, 37, 0.1);
+  -webkit-backdrop-filter: blur(1.5px);
+          backdrop-filter: blur(1.5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.alert-box-pclead-confirmreject {
+  background: #fff;
+  padding: 10px 25px;
+  width: 400px;
+  height: 268px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.alert-icon-pclead-confirmreject {
+  margin-bottom: 20px;
+}
+
+.icon-circle-pclead-confirmreject {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  margin: 10px 0;
+  left: 0;
+}
+
+.alert-content-pclead-confirmreject h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 13px;
+}
+
+.alert-content-pclead-confirmreject p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #667085;
+  margin: 14px 0;
+}
+
+.alert-buttons-pclead-confirmreject {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 8px;
+}
+.alert-buttons-pclead-confirmreject .btn-pclead-confirmreject {
+  font-family: "Poppins", sans-serif;
+  width: 170px;
+  height: 44px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+}
+.alert-buttons-pclead-confirmreject .cancel-pclead-confirmreject {
+  background-color: #f5f5f5;
+  border: 1px solid #d0d5dd;
+  color: #344054;
+}
+.alert-buttons-pclead-confirmreject .confirm-pclead-confirmreject {
+  background-color: #d92d20;
+  color: #fff;
+}
+
+/* Alert Form Approval-successreject /user-lead */
+.overlay-pclead-successreject {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(38, 37, 37, 0.1);
+  -webkit-backdrop-filter: blur(1.5px);
+          backdrop-filter: blur(1.5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.alert-box-pclead-successreject {
+  background: #fff;
+  padding: 10px 25px;
+  width: 400px;
+  height: 347px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.alert-icon-pclead-successreject {
+  margin-bottom: 20px;
+}
+
+.icon-circle-pclead-successreject {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  margin: 10px 0;
+  left: 0;
+}
+
+.alert-content-pclead-successreject h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 13px;
+}
+
+.alert-content-pclead-successreject p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #667085;
+  margin: 14px 0;
+}
+
+.alert-buttons-pclead-successreject {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 8px;
+}
+.alert-buttons-pclead-successreject .btn-pclead-successreject {
+  font-family: "Poppins", sans-serif;
+  width: 200px;
+  height: 44px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+}
+.alert-buttons-pclead-successreject .cancel-pclead-successreject {
+  background-color: #0fbe1b;
+  color: white;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+/* Responsif Mobile Confirm Reject */
+@media (max-width: 480px) {
+  .alert-box-pclead-confirmreject {
+    width: 365px;
+    height: 280px;
+  }
+  .alert-buttons-pclead-confirmreject {
+    margin-top: 30px;
+    gap: 15px;
+  }
+  .alert-buttons-pclead-confirmreject .btn-formreq {
+    font-size: 14px;
+    width: 155px;
+  }
+}
+@media (max-width: 380px) {
+  .alert-box-pclead-confirmreject {
+    width: 330px;
+    height: 280px;
+  }
+  .alert-buttons-pclead-confirmreject {
+    margin-top: 30px;
+    gap: 15px;
+  }
+  .alert-buttons-pclead-confirmreject .btn-formreq {
+    font-size: 14px;
+    width: 155px;
+  }
+}
+/* Responsif Mobile Success Reject */
+@media (max-width: 480px) {
+  .alert-box-pclead-successreject {
+    width: 365px;
+    height: 347px;
+  }
+  .alert-buttons-pclead-successreject {
+    margin-top: 30px;
+  }
+  .alert-buttons-pclead-successreject .btn-formreq {
+    font-size: 14px;
+    width: 155px;
+  }
+}
+@media (max-width: 380px) {
+  .alert-box-pclead-successreject {
+    width: 330px;
+    height: 347px;
+  }
+  .alert-buttons-pclead-successreject {
+    margin-top: 30px;
+    gap: 15px;
+  }
+  .alert-buttons-pclead-successreject .btn-formreq {
+    font-size: 14px;
+    width: 155px;
+  }
+}/*# sourceMappingURL=AlertFormReject.css.map */

@@ -1,0 +1,1314 @@
+.container-detail {
+    padding: 20px 50px;
+    width: 87vw;
+    height: 100vw;
+    font-family: "Poppins", sans-serif;
+
+    .loader {
+        width: 100%;
+        height: 75dvh;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+    }
+
+    .head-detail {
+        text-align: start;
+        font-weight: 700;
+        font-style: italic;
+        margin-bottom: 17px;
+        font-size: 30px;
+    }
+
+    .grid-detail {
+        display: grid;
+        padding-top: 8px;
+        grid-template-columns: 1.8fr 1fr 2.3fr;
+        grid-template-areas:
+            "production-date-detail parts-number-detail parts-number-detail"
+            "request-name-detail classification-detail box-detail"
+            "process-detail information-detail information-detail"
+            "location-detail information-detail information-detail";
+        gap: 15px 8px;
+
+        .production-date-detail {
+            grid-area: production-date-detail;
+
+            input {
+                display: flex;
+                width: 180px;
+                height: 45px;
+            }
+        }
+
+        .parts-number-detail {
+            grid-area: parts-number-detail;
+
+            input {
+                width: 180px;
+                height: 45px;
+                display: flex;
+            }
+        }
+
+        .request-name-detail {
+            grid-area: request-name-detail;
+
+            input {
+                display: flex;
+                width: 400px;
+                height: 45px;
+            }
+        }
+
+        .classification-detail {
+            grid-area: classification-detail;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+            select {
+                display: block;
+                width: 200px;
+                height: 45px;
+                padding: 6px 12px;
+                padding-right: 36px;
+                border-radius: 8px;
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M5%208L10%2013L15%208%22%20stroke%3D%22%23000%22%20stroke-width%3D%222%22/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position: right 10px center;
+
+                &:disabled {
+                    color: black;
+                    opacity: 1;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .box-detail {
+            grid-area: box-detail;
+
+            input {
+                display: flex;
+                width: 150px;
+                height: 45px;
+            }
+        }
+
+        .process-detail {
+            grid-area: process-detail;
+
+            input {
+                display: flex;
+                width: 400px;
+                height: 45px;
+            }
+        }
+
+        .information-detail {
+            grid-area: information-detail;
+
+            textarea {
+                display: flex;
+                width: 700px;
+                height: 150px;
+                padding: 10px;
+                resize: none;
+            }
+        }
+
+        .location-detail {
+            grid-area: location-detail;
+
+            input {
+                display: flex;
+                width: 400px;
+                height: 45px;
+            }
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: 600;
+            font-style: italic;
+            margin-bottom: 3px;
+            display: inline-block;
+        }
+
+        input,
+        select,
+        textarea {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            padding: 6px 10px;
+            border: 1px solid rgba(0, 102, 175, 0.5);
+            border-radius: 8px;
+            background-color: white;
+            font-size: 16px;
+            color: black;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+.status-container-detail {
+    display: flex;
+    gap: 40px;
+    padding-top: 25px;
+    background-color: #eaf4f9;
+    flex-wrap: wrap;
+}
+
+.card-detail {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    width: 400px;
+    height: 190px;
+    padding: 0;
+
+    .card-header-detail {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0066af;
+        width: 400px;
+        height: 50px;
+        color: white;
+        padding: 1rem 15px;
+        font-weight: 600;
+        font-size: 16px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+
+    .row-detail {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 18px;
+        font-size: 14px;
+        height: 32px;
+        border-bottom: 1px solid #eee;
+
+        &.header-detail {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            border-top: 1px solid #eee;
+        }
+
+        .role-detail {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+
+            .approval-icon-detail {
+                width: 15px;
+                height: 15px;
+            }
+        }
+
+        span {
+            font-size: 13px;
+            flex: 1;
+        }
+
+        span:nth-child(1) {
+            flex: 2;
+        }
+        span:nth-child(2) {
+            flex: 2;
+        }
+    }
+}
+
+.button-back-detail {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 45px;
+    padding-right: 60px;
+}
+
+.back-button-detail {
+    background: #374dd6;
+    font-family: "Poppins", sans-serif;
+    width: 200px;
+    height: 40px;
+    color: white;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+        background: #576bf0;
+    }
+}
+
+@media (max-width: 1700px) {
+    .container-detail {
+        width: 85vw;
+        max-height: 87vh;
+        overflow-y: auto;
+
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+        &::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+        .head-detail {
+            text-align: start;
+            font-weight: 700;
+            font-style: italic;
+            margin-bottom: 17px;
+            font-size: 23px;
+        }
+
+        .grid-detail {
+            display: grid;
+            padding-top: 8px;
+            grid-template-columns: 1.4fr 1fr 1.3fr;
+            grid-template-areas:
+                "production-date-detail parts-number-detail parts-number-detail"
+                "request-name-detail classification-detail box-detail"
+                "process-detail information-detail information-detail"
+                "location-detail information-detail information-detail";
+            gap: 8px 8px;
+
+            .production-date-detail {
+                grid-area: production-date-detail;
+
+                input {
+                    display: flex;
+                    width: 150px;
+                    height: 35px;
+                }
+            }
+
+            .parts-number-detail {
+                grid-area: parts-number-detail;
+
+                input {
+                    width: 150px;
+                    height: 35px;
+                    display: flex;
+                }
+            }
+
+            .request-name-detail {
+                grid-area: request-name-detail;
+
+                input {
+                    display: flex;
+                    width: 280px;
+                    height: 35px;
+                }
+            }
+
+            .classification-detail {
+                grid-area: classification-detail;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+
+                select {
+                    display: block;
+                    width: 200px;
+                    height: 35px;
+                    padding: 6px 12px;
+                    padding-right: 36px;
+                    border-radius: 8px;
+                    appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M5%208L10%2013L15%208%22%20stroke%3D%22%23000%22%20stroke-width%3D%222%22/%3E%3C/svg%3E");
+                    background-repeat: no-repeat;
+                    background-position: right 10px center;
+                    background-size: 16px;
+                }
+            }
+
+            .box-detail {
+                grid-area: box-detail;
+
+                input {
+                    display: flex;
+                    width: 120px;
+                    height: 35px;
+                }
+            }
+
+            .process-detail {
+                grid-area: process-detail;
+
+                input {
+                    display: flex;
+                    width: 280px;
+                    height: 35px;
+                }
+            }
+
+            .information-detail {
+                grid-area: information-detail;
+
+                textarea {
+                    display: flex;
+                    width: 550px;
+                    height: 117px;
+                    padding: 10px;
+                    resize: none;
+                }
+            }
+
+            .location-detail {
+                grid-area: location-detail;
+
+                input {
+                    display: flex;
+                    width: 280px;
+                    height: 35px;
+                }
+            }
+
+            label {
+                font-size: 14px;
+                font-weight: 600;
+                font-style: italic;
+                margin-bottom: 3px;
+                display: inline-block;
+            }
+
+            input,
+            select,
+            textarea {
+                font-family: "Poppins", sans-serif;
+                font-weight: 500;
+                padding: 8px 10px;
+                border: 1px solid rgba(0, 102, 175, 0.5);
+                border-radius: 8px;
+                background-color: white;
+                font-size: 13px;
+                box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+
+    .status-container-detail {
+        display: flex;
+        gap: 2rem;
+        padding-top: 15px;
+        background-color: #eaf4f9;
+        flex-wrap: wrap;
+    }
+
+    .card-detail {
+        background-color: white;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        width: 330px;
+        height: 170px;
+        padding: 0;
+
+        .card-header-detail {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0066af;
+            width: 330px;
+            height: 40px;
+            color: white;
+            padding: 1rem 15px;
+            font-weight: 600;
+            font-size: 11px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+
+        .row-detail {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 18px;
+            font-size: 13px;
+            height: 32px;
+            border-bottom: 1px solid #eee;
+
+            &.header-detail {
+                background-color: #f2f2f2;
+                font-weight: bold;
+                border-top: 1px solid #eee;
+            }
+
+            .role-detail {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                font-weight: 500;
+
+                .approval-icon-detail {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+
+            span {
+                font-size: 12px;
+                flex: 1;
+            }
+
+            span:nth-child(1) {
+                flex: 2;
+            }
+            span:nth-child(2) {
+                flex: 2;
+            }
+        }
+    }
+
+    .button-back-detail {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 35px;
+        padding-right: 30px;
+    }
+
+    .back-button-detail {
+        background: #374dd6;
+        font-family: "Poppins", sans-serif;
+        width: 150px;
+        height: 35px;
+        color: white;
+        padding: 8px 30px;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 13px;
+        cursor: pointer;
+        transition: background 0.3s;
+
+        &:hover {
+            background: #576bf0;
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .container-detail {
+        width: 82.5vw;
+        max-height: 85vh;
+        overflow-y: auto;
+
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+        &::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+
+        h2 {
+            text-align: start;
+            font-weight: 700;
+            font-style: italic;
+            margin-bottom: 17px;
+            font-size: 23px;
+        }
+
+        .grid-detail {
+            display: grid;
+            padding-top: 8px;
+            grid-template-columns: 1.4fr 1fr 1.3fr;
+            grid-template-areas:
+                "production-date-detail parts-number-detail parts-number-detail"
+                "request-name-detail classification-detail box-detail"
+                "process-detail information-detail information-detail"
+                "location-detail information-detail information-detail";
+            gap: 8px 8px;
+
+            .production-date-detail {
+                grid-area: production-date-detail;
+
+                input {
+                    display: flex;
+                    width: 150px;
+                    height: 35px;
+                }
+            }
+
+            .parts-number-detail {
+                grid-area: parts-number-detail;
+
+                input {
+                    width: 150px;
+                    height: 35px;
+                    display: flex;
+                }
+            }
+
+            .request-name-detail {
+                grid-area: request-name-detail;
+
+                input {
+                    display: flex;
+                    width: 280px;
+                    height: 35px;
+                }
+            }
+
+            .classification-detail {
+                grid-area: classification-detail;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+
+                select {
+                    display: block;
+                    width: 200px;
+                    height: 35px;
+                    padding: 6px 12px;
+                    padding-right: 36px;
+                    border-radius: 8px;
+                    appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M5%208L10%2013L15%208%22%20stroke%3D%22%23000%22%20stroke-width%3D%222%22/%3E%3C/svg%3E");
+                    background-repeat: no-repeat;
+                    background-position: right 10px center;
+                    background-size: 16px;
+                }
+            }
+
+            .box-detail {
+                grid-area: box-detail;
+
+                input {
+                    display: flex;
+                    width: 120px;
+                    height: 35px;
+                }
+            }
+
+            .process-detail {
+                grid-area: process-detail;
+
+                input {
+                    display: flex;
+                    width: 280px;
+                    height: 35px;
+                }
+            }
+
+            .information-detail {
+                grid-area: information-detail;
+
+                textarea {
+                    display: flex;
+                    width: 550px;
+                    height: 117px;
+                    padding: 10px;
+                    resize: none;
+                }
+            }
+
+            .location-detail {
+                grid-area: location-detail;
+
+                input {
+                    display: flex;
+                    width: 280px;
+                    height: 35px;
+                }
+            }
+
+            label {
+                font-size: 14px;
+                font-weight: 600;
+                font-style: italic;
+                margin-bottom: 3px;
+                display: inline-block;
+            }
+
+            input,
+            select,
+            textarea {
+                font-family: "Poppins", sans-serif;
+                font-weight: 500;
+                padding: 8px 10px;
+                border: 1px solid rgba(0, 102, 175, 0.5);
+                border-radius: 8px;
+                background-color: white;
+                font-size: 13px;
+                box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+
+    .status-container-detail {
+        display: flex;
+        gap: 2rem;
+        padding-top: 15px;
+        background-color: #eaf4f9;
+        flex-wrap: wrap;
+    }
+
+    .card-detail {
+        background-color: white;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        width: 330px;
+        height: 170px;
+        padding: 0;
+
+        .card-header-detail {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0066af;
+            width: 330px;
+            height: 40px;
+            color: white;
+            padding: 1rem 15px;
+            font-weight: 600;
+            font-size: 11px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+
+        .row-detail {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 18px;
+            font-size: 13px;
+            height: 32px;
+            border-bottom: 1px solid #eee;
+
+            &.header-detail {
+                background-color: #f2f2f2;
+                font-weight: bold;
+                border-top: 1px solid #eee;
+            }
+
+            .role-detail {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                font-weight: 500;
+
+                .approval-icon-detail {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+
+            span {
+                font-size: 12px;
+                flex: 1;
+            }
+
+            span:nth-child(1) {
+                flex: 2;
+            }
+            span:nth-child(2) {
+                flex: 2;
+            }
+        }
+    }
+
+    .button-back-detail {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 35px;
+        padding-right: 30px;
+    }
+
+    .back-button-detail {
+        background: #374dd6;
+        font-family: "Poppins", sans-serif;
+        width: 150px;
+        height: 35px;
+        color: white;
+        padding: 8px 30px;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 13px;
+        cursor: pointer;
+        transition: background 0.3s;
+
+        &:hover {
+            background: #576bf0;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .container-detail {
+        width: 80.5vw;
+        height: 100vw;
+
+        max-height: 82vh;
+        overflow-y: auto;
+
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+        &::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+
+        h2 {
+            margin-bottom: 17px;
+            font-size: 23px;
+        }
+
+        .grid-detail {
+            display: grid;
+            padding-top: 8px;
+            grid-template-columns: 1.4fr 1fr 1.3fr;
+            grid-template-areas:
+                "production-date-detail parts-number-detail parts-number-detail"
+                "request-name-detail classification-detail box-detail"
+                "process-detail information-detail information-detail"
+                "location-detail information-detail information-detail";
+            gap: 8px 8px;
+
+            .production-date-detail {
+                grid-area: production-date-detail;
+
+                input {
+                    display: flex;
+                    width: 150px;
+                    height: 35px;
+                }
+            }
+
+            .parts-number-detail {
+                grid-area: parts-number-detail;
+
+                input {
+                    width: 150px;
+                    height: 35px;
+                    display: flex;
+                }
+            }
+
+            .request-name-detail {
+                grid-area: request-name-detail;
+
+                input {
+                    display: flex;
+                    width: 260px;
+                    height: 35px;
+                }
+            }
+
+            .classification-detail {
+                grid-area: classification-detail;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+
+                select {
+                    display: block;
+                    width: 200px;
+                    height: 35px;
+                    padding: 6px 12px;
+                    padding-right: 36px;
+                    border-radius: 8px;
+                    appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M5%208L10%2013L15%208%22%20stroke%3D%22%23000%22%20stroke-width%3D%222%22/%3E%3C/svg%3E");
+                    background-repeat: no-repeat;
+                    background-position: right 10px center;
+                    background-size: 16px;
+                }
+            }
+
+            .box-detail {
+                grid-area: box-detail;
+
+                input {
+                    display: flex;
+                    width: 120px;
+                    height: 35px;
+                }
+            }
+
+            .process-detail {
+                grid-area: process-detail;
+
+                input {
+                    display: flex;
+                    width: 260px;
+                    height: 35px;
+                }
+            }
+
+            .information-detail {
+                grid-area: information-detail;
+
+                textarea {
+                    display: flex;
+                    width: 550px;
+                    height: 117px;
+                    padding: 10px;
+                    resize: none;
+                }
+            }
+
+            .location-detail {
+                grid-area: location-detail;
+
+                input {
+                    display: flex;
+                    width: 260px;
+                    height: 35px;
+                }
+            }
+
+            label {
+                font-size: 13px;
+                font-weight: 600;
+                font-style: italic;
+                margin-bottom: 3px;
+                display: inline-block;
+            }
+
+            input,
+            select,
+            textarea {
+                font-family: "Poppins", sans-serif;
+                font-weight: 500;
+                padding: 8px 10px;
+                border: 1px solid rgba(0, 102, 175, 0.5);
+                border-radius: 8px;
+                background-color: white;
+                font-size: 13px;
+                box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+
+    .status-container-detail {
+        display: flex;
+        gap: 2rem;
+        padding-top: 15px;
+        background-color: #eaf4f9;
+        flex-wrap: wrap;
+    }
+
+    .card-detail {
+        background-color: white;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        width: 330px;
+        height: 170px;
+        padding: 0;
+
+        .card-header-detail {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0066af;
+            width: 330px;
+            height: 40px;
+            color: white;
+            padding: 1rem 15px;
+            font-weight: 600;
+            font-size: 11px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+
+        .row-detail {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 18px;
+            font-size: 13px;
+            height: 32px;
+            border-bottom: 1px solid #eee;
+
+            &.header-detail {
+                background-color: #f2f2f2;
+                font-weight: bold;
+                border-top: 1px solid #eee;
+            }
+
+            .role-detail {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                font-weight: 500;
+
+                .approval-icon-detail {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+
+            span {
+                font-size: 12px;
+                flex: 1;
+            }
+
+            span:nth-child(1) {
+                flex: 2;
+            }
+            span:nth-child(2) {
+                flex: 2;
+            }
+        }
+    }
+
+    .button-back-detail {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 35px;
+        padding-right: 20px;
+    }
+
+    .back-button-detail {
+        background: #374dd6;
+        font-family: "Poppins", sans-serif;
+        width: 150px;
+        height: 35px;
+        color: white;
+        padding: 8px 30px;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 13px;
+        cursor: pointer;
+        transition: background 0.3s;
+
+        &:hover {
+            background: #576bf0;
+        }
+    }
+}
+
+/* Media Query untuk 1024px */
+@media (max-width: 1024px) {
+    .container-detail {
+        width: 95vw;
+        padding: 23px 48px 23px 30px;
+        max-height: 85vh;
+        overflow-y: auto;
+
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .head-detail {
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+
+        .grid-detail {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "production-date-detail parts-number-detail"
+                "request-name-detail classification-detail"
+                "process-detail box-detail"
+                "location-detail location-detail"
+                "information-detail information-detail";
+            gap: 10px;
+
+            .production-date-detail input,
+            .parts-number-detail input,
+            .box-detail input {
+                width: 150px;
+                height: 40px;
+            }
+
+            .request-name-detail input,
+            .process-detail input,
+            .location-detail input {
+                width: 280px;
+                height: 40px;
+            }
+
+            .classification-detail select {
+                width: 280px;
+                height: 40px;
+            }
+
+            .information-detail textarea {
+                width: 550px;
+                height: 120px;
+            }
+
+            label {
+                font-size: 14px;
+            }
+
+            input,
+            select,
+            textarea {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+        }
+    }
+
+    .status-container-detail {
+        gap: 2.5rem;
+        padding-top: 30px;
+        justify-content: flex-start;
+    }
+
+    .card-detail {
+        width: 300px;
+        height: 160px;
+
+        .card-header-detail {
+            width: 300px;
+            height: 35px;
+            font-size: 12px;
+            padding: 0.8rem 12px;
+        }
+
+        .row-detail {
+            padding: 0.6rem 12px;
+            font-size: 11px;
+            height: 28px;
+
+            span {
+                font-size: 11px;
+            }
+        }
+    }
+
+    .button-back-detail {
+        padding-top: 40px;
+        padding-right: 20px;
+    }
+}
+
+/* Media Query untuk 480px */
+@media (max-width: 480px) {
+    .container-detail {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px 18px 80px 18px;
+        margin: 0 auto;
+
+        height: 100dvh;
+        max-height: 90vh;
+        overflow-y: auto;
+
+        .head-detail {
+            font-size: 23px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .grid-detail {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "production-date-detail"
+                "parts-number-detail"
+                "request-name-detail"
+                "classification-detail"
+                "box-detail"
+                "process-detail"
+                "location-detail"
+                "information-detail";
+            gap: 10px;
+            width: 100%;
+
+            .request-name-detail,
+            .classification-detail,
+            .process-detail,
+            .location-detail {
+                input,
+                select {
+                    width: 90%;
+                    height: 40px;
+                }
+            }
+
+            .production-date-detail,
+            .parts-number-detail,
+            .box-detail {
+                input {
+                    width: 190px;
+                }
+            }
+
+            .production-date-detail {
+                input {
+                    &::-webkit-calendar-picker-indicator {
+                        display: none;
+                    }
+
+                    -webkit-appearance: none !important;
+                    -moz-appearance: none !important;
+                    appearance: none !important;
+                }
+            }
+
+            .information-detail {
+                width: 100%;
+
+                textarea {
+                    width: 100%;
+                    min-height: 150px;
+                    height: 100px;
+                }
+            }
+
+            label {
+                font-size: 14px;
+                margin-bottom: 6px;
+                display: block;
+                width: 100%;
+            }
+
+            input,
+            select,
+            textarea {
+                font-size: 15px;
+                padding: 6px 12px;
+            }
+        }
+    }
+
+    .status-container-detail {
+        gap: 1.5rem;
+        padding-top: 30px;
+        justify-content: center;
+    }
+
+    .card-detail {
+        width: 100%;
+        max-width: 350px;
+        height: 150px;
+
+        .card-header-detail {
+            width: 100%;
+            height: 35px;
+            font-size: 13px;
+            padding: 0.8rem 10px;
+        }
+
+        .row-detail {
+            padding: 0.6rem 10px;
+            font-size: 11px;
+            height: 27px;
+
+            .role-detail .approval-icon-detail {
+                width: 12px;
+                height: 12px;
+            }
+
+            span {
+                font-size: 11px;
+            }
+        }
+    }
+
+    .button-back-detail {
+        padding-top: 30px;
+        padding-right: 15px;
+        justify-content: center;
+    }
+
+    .back-button-detail {
+        width: 150px;
+        height: 38px;
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 380px) {
+    .container-detail {
+        padding: 20px 18px 80px 18px;
+
+        max-height: 90vh;
+        overflow-y: auto;
+        .head-detail {
+            font-size: 23px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .grid-detail {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "production-date-detail"
+                "parts-number-detail"
+                "request-name-detail"
+                "classification-detail"
+                "box-detail"
+                "process-detail"
+                "location-detail"
+                "information-detail";
+            gap: 10px;
+            width: 100%;
+
+            .request-name-detail,
+            .classification-detail,
+            .process-detail,
+            .location-detail {
+                input,
+                select {
+                    width: 90%;
+                    height: 40px;
+                    box-sizing: border-box;
+                }
+            }
+
+            .production-date-detail,
+            .parts-number-detail,
+            .box-detail {
+                width: 190px;
+            }
+
+            .information-detail {
+                width: 100%;
+
+                textarea {
+                    width: 100%;
+                    min-height: 150px;
+                    height: 100px;
+                }
+            }
+
+            label {
+                font-size: 14px;
+                margin-bottom: 6px;
+                display: block;
+                width: 100%;
+            }
+
+            input,
+            select,
+            textarea {
+                font-size: 15px;
+                padding: 6px 12px;
+            }
+        }
+    }
+
+    .back-button-detail {
+        width: 140px;
+    }
+}

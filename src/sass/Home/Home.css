@@ -1,0 +1,192 @@
+.home-wrapper {
+  width: 100vw;
+  padding-top: 50px;
+}
+
+.home-container {
+  padding-right: 210px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.home-container .loader {
+  width: 100%;
+  height: 75dvh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+}
+.home-container .company-name {
+  font-size: 38px;
+  font-weight: bold;
+  font-style: italic;
+  color: #2b2b2b;
+  margin-bottom: 28px;
+}
+.home-container .welcome-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2b2b2b;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto 20px auto;
+  border: 1.8px solid #1c85b7;
+  border-radius: 15px;
+  line-height: 1.7; /* Untuk readability yang lebih baik */
+}
+.home-container .welcome-text .highlight {
+  color: #0165b9;
+}
+.home-container .welcome-text .highlight-role,
+.home-container .welcome-text .highlight-name {
+  color: #066cb6;
+  font-weight: 700;
+}
+.home-container .welcome-text .highlight-dept {
+  color: #0d99d6;
+  font-weight: bold;
+}
+.home-container .request-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1d1d1d;
+}
+
+@media (max-width: 1440px) {
+  .home-wrapper {
+    padding-top: 30px;
+  }
+  .home-container {
+    padding-right: 245px;
+  }
+  .home-container .company-name {
+    font-size: 33px;
+    margin-bottom: 20px;
+  }
+  .home-container .welcome-text {
+    font-size: 18px;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    padding: 18px 12px;
+    margin-bottom: 18px;
+  }
+  .home-container .request-text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1280px) {
+  .home-wrapper {
+    padding-top: 30px;
+  }
+  .home-container {
+    padding-right: 253px;
+  }
+  .home-container .company-name {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .home-container .welcome-text {
+    font-size: 17px;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    padding: 18px 10px;
+    margin-bottom: 18px;
+  }
+  .home-container .request-text {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1024px) {
+  .home-wrapper {
+    width: 100%;
+    padding: 70px 20px;
+  }
+  .home-container {
+    padding: 0;
+    text-align: center;
+  }
+  .home-container .company-name {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+  .home-container .welcome-text {
+    font-size: 18px;
+    max-width: -moz-fit-content;
+    max-width: fit-content; /* Full width dalam container */
+    padding: 18px 11px;
+    margin: 0 auto 20px auto;
+  }
+  .home-container .request-text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 800px) {
+  .home-wrapper {
+    width: 100%;
+    padding: 70px 20px;
+  }
+  .home-container {
+    padding: 0;
+    text-align: center;
+  }
+  .home-container .company-name {
+    font-size: 29px;
+    margin-bottom: 20px;
+  }
+  .home-container .welcome-text {
+    font-size: 16px;
+    max-width: -moz-fit-content;
+    max-width: fit-content; /* Full width dalam container */
+    padding: 18px 11px;
+    margin: 0 auto 20px auto;
+  }
+  .home-container .request-text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .home-wrapper {
+    width: 100%;
+    padding: 50px 16px; /* Kurangi padding untuk mobile */
+  }
+  .home-container {
+    padding: 0;
+    text-align: center;
+  }
+  .home-container .company-name {
+    font-size: 25px; /* Sedikit lebih kecil untuk mobile */
+    margin-bottom: 35px;
+  }
+  .home-container .welcome-text {
+    font-size: 18px; /* Lebih kecil untuk mobile */
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    padding: 16px 10px;
+    margin: 0 14px 18px 14px;
+  }
+  .home-container .request-text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 380px) {
+  .home-wrapper {
+    width: 100%;
+    padding: 50px 15px; /* Kurangi padding untuk mobile */
+  }
+  .home-container {
+    padding: 0;
+    text-align: center;
+  }
+  .home-container .company-name {
+    font-size: 23px; /* Sedikit lebih kecil untuk mobile */
+  }
+  .home-container .welcome-text {
+    font-size: 16px; /* Lebih kecil untuk mobile */
+  }
+  .home-container .request-text {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=Home.css.map */
