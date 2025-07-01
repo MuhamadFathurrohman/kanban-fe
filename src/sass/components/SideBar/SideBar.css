@@ -96,7 +96,7 @@
   border-radius: 10px;
 }
 .sidebar .nav-buttons .nav-button .img-nav {
-  width: 27px;
+  width: 25px;
   height: 23px;
 }
 .sidebar .nav-buttons .nav-button span {
@@ -115,7 +115,7 @@
   filter: brightness(0) invert(1);
 }
 .sidebar .logout-section {
-  margin-top: 19px;
+  margin-top: 37px;
 }
 .sidebar .logout-section .logout-button {
   font-family: "Poppins", sans-serif;
@@ -144,8 +144,98 @@
   font-size: 12px;
 }
 
+@media (max-width: 1280px) {
+  .sidebar .logo {
+    width: 65px;
+    margin-bottom: 15px;
+  }
+  .sidebar .nav-buttons {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .sidebar .nav-buttons .nav-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    margin-right: 18px;
+    width: 190px;
+    height: 36px;
+    font-weight: 600;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.1s, color 0.1s;
+    border-radius: 10px;
+  }
+  .sidebar .nav-buttons .nav-button .img-nav {
+    width: 20px;
+    height: 18px;
+  }
+  .sidebar .nav-buttons .nav-button span {
+    padding-top: 2px;
+  }
+  .sidebar .nav-buttons .nav-button.primary, .sidebar .nav-buttons .nav-button.secondary {
+    background: transparent;
+    color: #0077c2;
+    margin-bottom: 8px;
+  }
+  .sidebar .nav-buttons .nav-button.active {
+    background: #1c85b7;
+    color: #fff;
+  }
+  .sidebar .nav-buttons .nav-button.active .img-nav {
+    filter: brightness(0) invert(1);
+  }
+  .sidebar .logout-section {
+    margin-top: 10px;
+    /* margin-right: 10px; */
+  }
+  .sidebar .logout-section .logout-button {
+    font-family: "Poppins", sans-serif;
+    width: 140px;
+    height: 35px;
+    background: #ed1010;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .sidebar .logout-section .logout-button:hover {
+    background-color: #f44545;
+  }
+  .sidebar .logout-section img {
+    width: 20px;
+    height: 18px;
+  }
+  .sidebar .logout-section span {
+    font-size: 12px;
+  }
+}
 @media (max-width: 1024px) {
   .sidebar {
+    font-family: "Poppins", sans-serif;
+    width: 240px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.22);
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 8px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
   }
@@ -155,8 +245,131 @@
   .sidebar.closed {
     transform: translateX(-100%);
   }
+  .sidebar .logo {
+    width: 70px;
+    margin-bottom: 20px;
+  }
   .sidebar .close-sidebar-button {
+    display: block;
+    border: none;
+    position: absolute;
+    top: 24px;
+    right: 25px;
     cursor: pointer;
+    z-index: 1010;
+  }
+  .sidebar .close-sidebar-button img {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 1024px) and (max-width: 768px) {
+  .sidebar .close-sidebar-button {
+    display: block;
+  }
+}
+@media (max-width: 1024px) {
+  .sidebar .profile-card {
+    background: #0066af;
+    border-radius: 4px;
+    color: #fff;
+    width: 100%;
+    height: 95px;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .sidebar .profile-card .avatar {
+    padding: 15px 4px;
+  }
+  .sidebar .profile-card .avatar img {
+    padding-top: 3px;
+    width: 65px;
+    height: 65px;
+  }
+  .sidebar .profile-card .info {
+    text-align: center;
+    line-height: 24px;
+  }
+  .sidebar .profile-card .info .department {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .sidebar .profile-card .info .time {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .sidebar .profile-card .info .date {
+    font-size: 12px;
+  }
+  .sidebar .nav-buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .sidebar .nav-buttons .nav-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+    width: 190px;
+    height: 45px;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.1s, color 0.1s;
+    border-radius: 10px;
+  }
+  .sidebar .nav-buttons .nav-button .img-nav {
+    width: 25px;
+    height: 23px;
+  }
+  .sidebar .nav-buttons .nav-button span {
+    padding-top: 2px;
+  }
+  .sidebar .nav-buttons .nav-button.primary, .sidebar .nav-buttons .nav-button.secondary {
+    background: transparent;
+    color: #0077c2;
+    margin-bottom: 10px;
+  }
+  .sidebar .nav-buttons .nav-button.active {
+    background: #1c85b7;
+    color: #fff;
+  }
+  .sidebar .nav-buttons .nav-button.active .img-nav {
+    filter: brightness(0) invert(1);
+  }
+  .sidebar .logout-section {
+    margin-top: 37px;
+  }
+  .sidebar .logout-section .logout-button {
+    font-family: "Poppins", sans-serif;
+    width: 147px;
+    height: 38px;
+    background: #ed1010;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .sidebar .logout-section .logout-button:hover {
+    background-color: #f44545;
+  }
+  .sidebar .logout-section img {
+    width: 25px;
+    height: 20px;
+  }
+  .sidebar .logout-section span {
+    font-size: 12px;
   }
 }
 @media (max-width: 768px) {

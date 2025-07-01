@@ -417,29 +417,11 @@
     justify-content: center;
     gap: 0.53rem;
     align-items: center;
-    /* .approval-request__pagination-btn:not(.previous-btn):not(.next-btn):last-of-type {
-        margin-right: 100%;
-    } */
   }
   .approval-request .approval-request__pagination .approval-request__pagination-btn {
     font-size: 12px;
     padding: 0.3rem 0.5rem;
     min-width: 30px;
-    order: 1;
-    /* &.previous-btn,
-    &.next-btn {
-        padding: 0.5rem 1rem;
-        order: 2;
-        flex-basis: auto;
-    }
-
-    &.previous-btn {
-        margin-top: 0.5rem;
-    }
-
-    &.next-btn {
-        margin-top: 0.5rem;
-    } */
   }
 }
 /* Media Query untuk layar 380px */

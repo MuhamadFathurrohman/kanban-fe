@@ -4,6 +4,8 @@ import Users from "../assets/icons/users.svg";
 import File from "../assets/icons/file.svg";
 import FileApprv from "../assets/icons/approve.svg";
 import Profile from "../assets/icons/profile.svg";
+import Audit from "../assets/icons/audit.svg";
+import Register from "../assets/icons/register.svg";
 
 const SIDEBAR_CONFIGS = {
   user: {
@@ -105,6 +107,18 @@ const SIDEBAR_CONFIGS = {
         path: "/admin/profile",
         icon: Profile,
         label: "Profile",
+        class: "primary",
+      },
+      {
+        path: "/admin/auditlog",
+        icon: Audit,
+        label: "Audit Log",
+        class: "primary",
+      },
+      {
+        path: "/admin/registration",
+        icon: Register,
+        label: "Registration",
         class: "primary",
       },
     ],

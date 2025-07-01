@@ -14,6 +14,8 @@ import Report from "./views/Report";
 import SignUp from "./views/Auth/Signup";
 import ForgotPassword from "./views/Auth/ForgotPassword";
 import Profile from "./views/Users/Profile";
+import Registration from "./views/Registration";
+import AuditLog from "./views/Auditlog";
 
 const router = createBrowserRouter([
   {
@@ -165,6 +167,14 @@ const router = createBrowserRouter([
       {
         path: "profile",
         element: <Profile />,
+      },
+      {
+        path: "auditlog",
+        element: <AuditLog />,
+      },
+      {
+        path: "registration",
+        element: <Registration />,
       },
     ],
   },

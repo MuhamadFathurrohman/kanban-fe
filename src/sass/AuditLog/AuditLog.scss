@@ -1,10 +1,10 @@
-.approval-request {
+.auditlog {
     width: 87vw;
     padding: 23px 48px 23px 30px;
     border-radius: 8px;
     font-family: "Poppins", sans-serif;
 
-    .approval-request__header {
+    .auditlog__header {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -17,11 +17,11 @@
         }
     }
 
-    .approval-request__search {
+    .auditlog__search {
         position: relative;
         display: inline-block;
 
-        .approval-request__search-icon {
+        .auditlog__search-icon {
             position: absolute;
             top: 37%;
             left: 13px;
@@ -31,7 +31,7 @@
             pointer-events: none;
         }
 
-        .approval-request__search-input {
+        .auditlog__search-input {
             width: 350px;
             height: 40px;
             padding: 0.5rem 0.75rem 0.5rem 2.5rem;
@@ -41,13 +41,13 @@
         }
     }
 
-    .approval-request__table-container {
+    .auditlog__table-container {
         background-color: white;
         border-radius: 8px;
         overflow: hidden;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-        .approval-request__table {
+        .auditlog__table {
             width: 100%;
             border-collapse: collapse;
 
@@ -75,7 +75,7 @@
                         vertical-align: middle;
                     }
 
-                    .approval-request__status {
+                    .auditlog__status {
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -86,24 +86,24 @@
                         min-width: 100px;
                         height: 35px;
 
-                        &.approval-request__status--approved {
+                        &.auditlog__status--approved {
                             background-color: #0fbe1b;
                             color: white;
                         }
 
-                        &.approval-request__status--rejected {
+                        &.auditlog__status--rejected {
                             background-color: #ff0000;
                             color: white;
                         }
                     }
 
-                    .approval-request__actions {
+                    .auditlog__actions {
                         height: 65px;
                         display: flex;
                         justify-content: center;
                         gap: 8px;
 
-                        .approval-request__view-btn {
+                        .auditlog__view-btn {
                             border: none;
                             border-radius: 6px;
                             padding: 0.4rem 0.6rem;
@@ -121,7 +121,7 @@
                                 background-color: #4ebefa;
                             }
 
-                            .approval-request__action-icon {
+                            .auditlog__action-icon {
                                 width: 20px;
                                 height: 20px;
                             }
@@ -129,7 +129,7 @@
                     }
                 }
 
-                .approval-request__empty-row {
+                .auditlog__empty-row {
                     text-align: center;
                     color: #999;
                     font-size: 15px;
@@ -140,7 +140,7 @@
         }
     }
 
-    .approval-request__pagination {
+    .auditlog__pagination {
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -148,7 +148,7 @@
         gap: 0.7rem;
         flex-wrap: wrap;
 
-        .approval-request__pagination-btn {
+        .auditlog__pagination-btn {
             padding: 0.3rem 0.8rem;
             color: #0066af;
             cursor: pointer;
@@ -194,7 +194,7 @@
 }
 
 @media (max-width: 1700px) {
-    .approval-request {
+    .auditlog {
         width: 85vw;
         max-height: 87vh;
         overflow-y: auto;
@@ -206,14 +206,14 @@
             display: none; /* Chrome, Safari, Opera */
         }
 
-        .approval-request__header {
+        .auditlog__header {
             h2 {
                 font-size: 23px;
             }
         }
 
-        .approval-request__table-container {
-            .approval-request__table {
+        .auditlog__table-container {
+            .auditlog__table {
                 thead {
                     th {
                         font-size: 15px;
@@ -228,20 +228,20 @@
                             font-size: 15px;
                         }
 
-                        .approval-request__status {
+                        .auditlog__status {
                             font-size: 11px;
                             height: 30px;
                             min-width: 100px;
                         }
 
-                        .approval-request__actions {
+                        .auditlog__actions {
                             height: 53px;
 
-                            .approval-request__view-btn {
+                            .auditlog__view-btn {
                                 width: 30px;
                                 height: 30px;
 
-                                .approval-request__action-icon {
+                                .auditlog__action-icon {
                                     width: 15px;
                                     height: 15px;
                                 }
@@ -252,8 +252,8 @@
             }
         }
 
-        .approval-request__pagination {
-            .approval-request__pagination-btn {
+        .auditlog__pagination {
+            .auditlog__pagination-btn {
                 font-size: 13px;
             }
         }
@@ -261,7 +261,7 @@
 }
 
 @media (max-width: 1440px) {
-    .approval-request {
+    .auditlog {
         width: 82.5vw;
         max-height: 85vh;
         overflow-y: auto;
@@ -272,20 +272,20 @@
             display: none; /* Chrome, Safari, Opera */
         }
 
-        .approval-request__header {
+        .auditlog__header {
             h2 {
                 font-size: 23px;
             }
         }
 
-        .approval-request__search {
-            .approval-request__search-input {
+        .auditlog__search {
+            .auditlog__search-input {
                 height: 40px;
             }
         }
 
-        .approval-request__table-container {
-            .approval-request__table {
+        .auditlog__table-container {
+            .auditlog__table {
                 thead {
                     th {
                         font-size: 15px;
@@ -300,20 +300,20 @@
                             font-size: 15px;
                         }
 
-                        .approval-request__status {
+                        .auditlog__status {
                             font-size: 11px;
                             height: 30px;
                             min-width: 100px;
                         }
 
-                        .approval-request__actions {
+                        .auditlog__actions {
                             height: 53px;
 
-                            .approval-request__view-btn {
+                            .auditlog__view-btn {
                                 width: 30px;
                                 height: 30px;
 
-                                .approval-request__action-icon {
+                                .auditlog__action-icon {
                                     width: 15px;
                                     height: 15px;
                                 }
@@ -324,8 +324,8 @@
             }
         }
 
-        .approval-request__pagination {
-            .approval-request__pagination-btn {
+        .auditlog__pagination {
+            .auditlog__pagination-btn {
                 font-size: 13px;
             }
         }
@@ -333,7 +333,7 @@
 }
 
 @media (max-width: 1280px) {
-    .approval-request {
+    .auditlog {
         width: 82vw;
         max-height: 82vh;
         overflow-y: auto;
@@ -344,14 +344,14 @@
             display: none; /* Chrome, Safari, Opera */
         }
 
-        .approval-request__header {
+        .auditlog__header {
             h2 {
                 font-size: 23px;
             }
         }
 
-        .approval-request__table-container {
-            .approval-request__table {
+        .auditlog__table-container {
+            .auditlog__table {
                 thead {
                     th {
                         font-size: 13px;
@@ -366,7 +366,7 @@
                             font-size: 13px;
                         }
 
-                        .approval-request__status {
+                        .auditlog__status {
                             font-size: 11px;
                             height: 30px;
                         }
@@ -379,12 +379,12 @@
 
 /* Media Query untuk layar 1024px */
 @media (max-width: 1024px) {
-    .approval-request {
+    .auditlog {
         width: 100vw;
         padding: 30px 30px;
 
-        .approval-request__table-container {
-            .approval-request__table {
+        .auditlog__table-container {
+            .auditlog__table {
                 thead {
                     th {
                         font-size: 13px;
@@ -399,21 +399,21 @@
                             font-size: 13px;
                         }
 
-                        .approval-request__status {
+                        .auditlog__status {
                             font-size: 11px;
                             height: 30px;
                             min-width: 80px;
                         }
 
-                        .approval-request__actions {
+                        .auditlog__actions {
                             height: 60px;
 
-                            .approval-request__view-btn {
+                            .auditlog__view-btn {
                                 margin-top: 4px;
                                 width: 30px;
                                 height: 30px;
 
-                                .approval-request__action-icon {
+                                .auditlog__action-icon {
                                     width: 15px;
                                     height: 15px;
                                 }
@@ -428,18 +428,18 @@
 
 /* Media Query untuk layar 800px */
 @media (max-width: 800px) {
-    .approval-request {
+    .auditlog {
         width: 100vw;
         padding: 30px 30px;
 
-        .approval-request__search {
-            .approval-request__search-input {
+        .auditlog__search {
+            .auditlog__search-input {
                 width: 350px;
             }
         }
 
-        .approval-request__table-container {
-            .approval-request__table {
+        .auditlog__table-container {
+            .auditlog__table {
                 thead {
                     th {
                         font-size: 13px;
@@ -454,21 +454,21 @@
                             font-size: 13px;
                         }
 
-                        .approval-request__status {
+                        .auditlog__status {
                             font-size: 11px;
                             height: 35px;
                             min-width: 90px;
                         }
 
-                        .approval-request__actions {
+                        .auditlog__actions {
                             height: 60px;
 
-                            .approval-request__view-btn {
+                            .auditlog__view-btn {
                                 margin-top: 4px;
                                 width: 30px;
                                 height: 30px;
 
-                                .approval-request__action-icon {
+                                .auditlog__action-icon {
                                     width: 15px;
                                     height: 15px;
                                 }
@@ -483,12 +483,12 @@
 
 /* Media Query untuk layar 480px */
 @media (max-width: 480px) {
-    .approval-request {
+    .auditlog {
         width: 100vw;
         padding: 30px 20px;
         max-height: 85vh;
 
-        .approval-request__header {
+        .auditlog__header {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -502,19 +502,19 @@
             }
         }
 
-        .approval-request__search {
-            .approval-request__search-input {
+        .auditlog__search {
+            .auditlog__search-input {
                 width: 350px;
             }
         }
 
-        .approval-request__table-container {
+        .auditlog__table-container {
             overflow-x: auto;
             -webkit-overflow-scrolling: touch;
             margin: 0 -6px;
             width: calc(100% + 12px);
 
-            .approval-request__table {
+            .auditlog__table {
                 min-width: 550px;
 
                 thead {
@@ -535,23 +535,23 @@
                             white-space: nowrap;
                         }
 
-                        .approval-request__status {
+                        .auditlog__status {
                             font-size: 10px;
                             height: 30px;
                             min-width: 100px;
                             padding: 4px 8px;
                         }
 
-                        .approval-request__actions {
+                        .auditlog__actions {
                             height: 50px;
                             min-width: 80px;
 
-                            .approval-request__view-btn {
+                            .auditlog__view-btn {
                                 margin-top: 2px;
                                 width: 28px;
                                 height: 28px;
 
-                                .approval-request__action-icon {
+                                .auditlog__action-icon {
                                     width: 14px;
                                     height: 14px;
                                 }
@@ -562,14 +562,14 @@
             }
         }
 
-        .approval-request__pagination {
+        .auditlog__pagination {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 0.53rem;
             align-items: center;
 
-            .approval-request__pagination-btn {
+            .auditlog__pagination-btn {
                 font-size: 12px;
                 padding: 0.3rem 0.5rem;
                 min-width: 30px;
@@ -580,20 +580,20 @@
 
 /* Media Query untuk layar 380px */
 @media (max-width: 380px) {
-    .approval-request {
+    .auditlog {
         padding: 30px 15px;
 
-        .approval-request__search {
-            .approval-request__search-input {
+        .auditlog__search {
+            .auditlog__search-input {
                 width: 320px;
             }
         }
 
-        .approval-request__pagination {
+        .auditlog__pagination {
             justify-content: center;
             gap: 0.51rem;
 
-            .approval-request__pagination-btn {
+            .auditlog__pagination-btn {
                 font-size: 12px;
                 min-width: 27px;
             }

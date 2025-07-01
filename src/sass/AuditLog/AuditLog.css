@@ -1,0 +1,443 @@
+.auditlog {
+  width: 87vw;
+  padding: 23px 48px 23px 30px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+}
+.auditlog .auditlog__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.auditlog .auditlog__header h2 {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 600;
+}
+.auditlog .auditlog__search {
+  position: relative;
+  display: inline-block;
+}
+.auditlog .auditlog__search .auditlog__search-icon {
+  position: absolute;
+  top: 37%;
+  left: 13px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+}
+.auditlog .auditlog__search .auditlog__search-input {
+  width: 350px;
+  height: 40px;
+  padding: 0.5rem 0.75rem 0.5rem 2.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  border-radius: 12px;
+  font-size: 14px;
+}
+.auditlog .auditlog__table-container {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.auditlog .auditlog__table-container .auditlog__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.auditlog .auditlog__table-container .auditlog__table thead th {
+  background-color: #0066af;
+  padding: 0.75rem;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+}
+.auditlog .auditlog__table-container .auditlog__table tbody tr {
+  height: 65px;
+}
+.auditlog .auditlog__table-container .auditlog__table tbody tr td {
+  padding: 0.65rem;
+  border-bottom: 1px solid #ddd;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+.auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 13px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  min-width: 100px;
+  height: 35px;
+}
+.auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__status.auditlog__status--approved {
+  background-color: #0fbe1b;
+  color: white;
+}
+.auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__status.auditlog__status--rejected {
+  background-color: #ff0000;
+  color: white;
+}
+.auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__actions {
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__actions .auditlog__view-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #219cdf;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+.auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__actions .auditlog__view-btn:hover {
+  background-color: #4ebefa;
+}
+.auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__actions .auditlog__view-btn .auditlog__action-icon {
+  width: 20px;
+  height: 20px;
+}
+.auditlog .auditlog__table-container .auditlog__table tbody .auditlog__empty-row {
+  text-align: center;
+  color: #999;
+  font-size: 15px;
+  padding: 2rem;
+  font-style: italic;
+}
+.auditlog .auditlog__pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+.auditlog .auditlog__pagination .auditlog__pagination-btn {
+  padding: 0.3rem 0.8rem;
+  color: #0066af;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  border: 1px solid #0066af;
+  background-color: white;
+  min-width: 40px;
+}
+.auditlog .auditlog__pagination .auditlog__pagination-btn:hover:not(:disabled) {
+  background-color: #0066af;
+  color: white;
+}
+.auditlog .auditlog__pagination .auditlog__pagination-btn:disabled {
+  opacity: 1.5;
+  cursor: not-allowed;
+  border-color: #ccc;
+  color: #ccc;
+}
+.auditlog .auditlog__pagination .auditlog__pagination-btn.active-btn {
+  background-color: #0066af;
+  color: white;
+  font-weight: bold;
+}
+.auditlog .auditlog__pagination .auditlog__pagination-btn.previous-btn, .auditlog .auditlog__pagination .auditlog__pagination-btn.next-btn, .auditlog .auditlog__pagination .auditlog__pagination-btn.previos-icon, .auditlog .auditlog__pagination .auditlog__pagination-btn.next-icon {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+@media (max-width: 1700px) {
+  .auditlog {
+    width: 85vw;
+    max-height: 87vh;
+    overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+  .auditlog::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  .auditlog .auditlog__header h2 {
+    font-size: 23px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table thead th {
+    font-size: 15px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr {
+    height: 50px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr td {
+    font-size: 15px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__status {
+    font-size: 11px;
+    height: 30px;
+    min-width: 100px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__actions {
+    height: 53px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__actions .auditlog__view-btn {
+    width: 30px;
+    height: 30px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__actions .auditlog__view-btn .auditlog__action-icon {
+    width: 15px;
+    height: 15px;
+  }
+  .auditlog .auditlog__pagination .auditlog__pagination-btn {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1440px) {
+  .auditlog {
+    width: 82.5vw;
+    max-height: 85vh;
+    overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+  .auditlog::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  .auditlog .auditlog__header h2 {
+    font-size: 23px;
+  }
+  .auditlog .auditlog__search .auditlog__search-input {
+    height: 40px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table thead th {
+    font-size: 15px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr {
+    height: 50px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr td {
+    font-size: 15px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__status {
+    font-size: 11px;
+    height: 30px;
+    min-width: 100px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__actions {
+    height: 53px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__actions .auditlog__view-btn {
+    width: 30px;
+    height: 30px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__actions .auditlog__view-btn .auditlog__action-icon {
+    width: 15px;
+    height: 15px;
+  }
+  .auditlog .auditlog__pagination .auditlog__pagination-btn {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1280px) {
+  .auditlog {
+    width: 82vw;
+    max-height: 82vh;
+    overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+  .auditlog::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  .auditlog .auditlog__header h2 {
+    font-size: 23px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table thead th {
+    font-size: 13px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr {
+    height: 50px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr td {
+    font-size: 13px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__status {
+    font-size: 11px;
+    height: 30px;
+  }
+}
+/* Media Query untuk layar 1024px */
+@media (max-width: 1024px) {
+  .auditlog {
+    width: 100vw;
+    padding: 30px 30px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table thead th {
+    font-size: 13px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr {
+    height: 50px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr td {
+    font-size: 13px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__status {
+    font-size: 11px;
+    height: 30px;
+    min-width: 80px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__actions {
+    height: 60px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__actions .auditlog__view-btn {
+    margin-top: 4px;
+    width: 30px;
+    height: 30px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__actions .auditlog__view-btn .auditlog__action-icon {
+    width: 15px;
+    height: 15px;
+  }
+}
+/* Media Query untuk layar 800px */
+@media (max-width: 800px) {
+  .auditlog {
+    width: 100vw;
+    padding: 30px 30px;
+  }
+  .auditlog .auditlog__search .auditlog__search-input {
+    width: 350px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table thead th {
+    font-size: 13px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr {
+    height: 60px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr td {
+    font-size: 13px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__status {
+    font-size: 11px;
+    height: 35px;
+    min-width: 90px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__actions {
+    height: 60px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__actions .auditlog__view-btn {
+    margin-top: 4px;
+    width: 30px;
+    height: 30px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__actions .auditlog__view-btn .auditlog__action-icon {
+    width: 15px;
+    height: 15px;
+  }
+}
+/* Media Query untuk layar 480px */
+@media (max-width: 480px) {
+  .auditlog {
+    width: 100vw;
+    padding: 30px 20px;
+    max-height: 85vh;
+  }
+  .auditlog .auditlog__header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    width: 75%;
+  }
+  .auditlog .auditlog__header h2 {
+    font-size: 23px;
+    margin: 0;
+    text-align: left;
+  }
+  .auditlog .auditlog__search .auditlog__search-input {
+    width: 350px;
+  }
+  .auditlog .auditlog__table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 -6px;
+    width: calc(100% + 12px);
+  }
+  .auditlog .auditlog__table-container .auditlog__table {
+    min-width: 550px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table thead th {
+    font-size: 12px;
+    padding: 10px 10px;
+    white-space: nowrap;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr {
+    height: 40px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr td {
+    font-size: 12px;
+    padding: 8px 6px;
+    white-space: nowrap;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__status {
+    font-size: 10px;
+    height: 30px;
+    min-width: 100px;
+    padding: 4px 8px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__actions {
+    height: 50px;
+    min-width: 80px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__actions .auditlog__view-btn {
+    margin-top: 2px;
+    width: 28px;
+    height: 28px;
+  }
+  .auditlog .auditlog__table-container .auditlog__table tbody tr .auditlog__actions .auditlog__view-btn .auditlog__action-icon {
+    width: 14px;
+    height: 14px;
+  }
+  .auditlog .auditlog__pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.53rem;
+    align-items: center;
+  }
+  .auditlog .auditlog__pagination .auditlog__pagination-btn {
+    font-size: 12px;
+    padding: 0.3rem 0.5rem;
+    min-width: 30px;
+  }
+}
+/* Media Query untuk layar 380px */
+@media (max-width: 380px) {
+  .auditlog {
+    padding: 30px 15px;
+  }
+  .auditlog .auditlog__search .auditlog__search-input {
+    width: 320px;
+  }
+  .auditlog .auditlog__pagination {
+    justify-content: center;
+    gap: 0.51rem;
+  }
+  .auditlog .auditlog__pagination .auditlog__pagination-btn {
+    font-size: 12px;
+    min-width: 27px;
+  }
+}/*# sourceMappingURL=AuditLog.css.map */
