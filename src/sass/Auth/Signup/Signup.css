@@ -1,4 +1,4 @@
-.login-container {
+.signup-container {
   background: linear-gradient(to right, transparent 0%, transparent calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% + 0.5px), transparent calc(50% + 0.5px), transparent 100%), linear-gradient(to bottom, transparent 0%, transparent calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% + 0.5px), transparent calc(50% + 0.5px), transparent 100%), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 40%, rgba(183, 210, 246, 0.5) 70%, rgba(183, 210, 246, 0.5) 100%), linear-gradient(to bottom, #ffffff 25%, #c2d8f9 95%);
   background-size: 32px 32px, 32px 32px, 100% 100%, 100% 100%;
   background-blend-mode: multiply, multiply, normal, normal;
@@ -9,20 +9,9 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
-  /* // Hide scrollbar */
-  /* scrollbar-width: none; 
-  -ms-overflow-style: none;
-
-  &::-webkit-scrollbar {
-      display: none;
-  }
-
-  @media (max-width: 800px) {
-      background-size: cover;
-  } */
 }
 
-.login-card {
+.signup-card {
   background: white;
   padding: 30px;
   border-radius: 14px;
@@ -33,47 +22,47 @@
   display: flex;
   flex-direction: column;
 }
-.login-card input:-webkit-autofill {
+.signup-card input:-webkit-autofill {
   box-shadow: 0 0 0 1000px white inset !important;
   -webkit-text-fill-color: #000 !important;
 }
-.login-card .logo {
+.signup-card .logo {
   width: 80px;
   margin: 0 auto 25px auto;
   display: block;
 }
-.login-card h2 {
+.signup-card h2 {
   font-size: 17px;
   color: #0165b9;
   font-weight: bold;
   text-align: center;
   padding-bottom: 5px;
 }
-.login-card h2 .highlight {
+.signup-card h2 .highlight {
   color: #2ea1d8;
 }
-.login-card h3 {
+.signup-card h3 {
   font-size: 14px;
   text-align: center;
 }
-.login-card .sub-text {
+.signup-card .sub-text {
   font-size: 13px;
   font-weight: 600;
   margin-bottom: 40px;
   text-align: center;
 }
-.login-card .section-input {
+.signup-card .section-input {
   display: flex;
   flex-direction: column;
   width: 100%;
   /* // gap: 0px; */
 }
-.login-card .section-input .label-input {
+.signup-card .section-input .label-input {
   font-size: 13px;
   font-weight: 600;
 }
-.login-card .section-input input,
-.login-card .section-input .input {
+.signup-card .section-input input,
+.signup-card .section-input .input {
   width: 100%;
   height: 37px;
   margin-top: 3px;
@@ -83,8 +72,8 @@
   font-family: "Inter", sans-serif;
   font-size: 13px;
 }
-.login-card .section-input select,
-.login-card .section-input option {
+.signup-card .section-input select,
+.signup-card .section-input option {
   width: 100%;
   height: 37px;
   margin-top: 3px;
@@ -104,52 +93,52 @@
   border-radius: 8px;
   background-color: white;
 }
-.login-card .section-input select:focus,
-.login-card .section-input option:focus {
+.signup-card .section-input select:focus,
+.signup-card .section-input option:focus {
   outline: none;
   border-color: rgba(0, 102, 175, 0.8);
 }
-.login-card .section-input .section-input-password {
+.signup-card .section-input .section-input-password {
   display: flex;
   flex-direction: column;
 }
-.login-card .section-input .section-input-password .input-password {
+.signup-card .section-input .section-input-password .input-password {
   position: relative;
   display: inline-block;
 }
-.login-card .section-input .section-input-password .input-password input {
+.signup-card .section-input .section-input-password .input-password input {
   padding-right: 30px;
   box-sizing: border-box;
 }
-.login-card .section-input .section-input-password .input-password span {
+.signup-card .section-input .section-input-password .input-password span {
   position: absolute;
   top: 43%;
   right: 10px;
   transform: translateY(-50%);
   cursor: pointer;
 }
-.login-card .section-input .section-input-password .input-password span svg {
+.signup-card .section-input .section-input-password .input-password span svg {
   width: 20px;
   height: 20px;
   color: #1c85b7;
 }
-.login-card .section-input .section-input-password p {
+.signup-card .section-input .section-input-password p {
   padding: 0;
   margin: 0;
   font-size: 0.8rem;
   color: #0263b7;
   text-decoration: none;
 }
-.login-card .section-input .section-input-password p:hover {
+.signup-card .section-input .section-input-password p:hover {
   color: #2ea1d8;
 }
-.login-card .section-input .otp-inputs {
+.signup-card .section-input .otp-inputs {
   display: flex;
   gap: 8px;
   justify-content: center;
   margin-top: 10px;
 }
-.login-card .section-input .otp-inputs .otp-input {
+.signup-card .section-input .otp-inputs .otp-input {
   width: 45px !important;
   height: 45px !important;
   text-align: center;
@@ -162,16 +151,16 @@
   font-family: "Poppins", sans-serif;
   transition: all 0.2s ease;
 }
-.login-card .section-input .otp-inputs .otp-input:focus {
+.signup-card .section-input .otp-inputs .otp-input:focus {
   outline: none;
   border-color: #0165b9 !important;
   box-shadow: 0 0 0 3px rgba(46, 161, 216, 0.2);
   transform: scale(1.05);
 }
-.login-card .section-input .otp-inputs .otp-input:hover {
+.signup-card .section-input .otp-inputs .otp-input:hover {
   border-color: #0165b9;
 }
-.login-card button {
+.signup-card button {
   justify-content: center;
   margin: 20px auto 0 auto;
   background: #0263b7;
@@ -186,22 +175,22 @@
   max-width: 200px;
   height: 45px;
 }
-.login-card button:hover {
+.signup-card button:hover {
   background: #1976d2;
 }
-.login-card .auth-text {
+.signup-card .auth-text {
   font-size: 13px;
   margin-top: 20px;
   margin-bottom: 0;
   text-align: center;
   text-decoration: none;
 }
-.login-card .auth-text span {
+.signup-card .auth-text span {
   cursor: pointer;
   text-decoration: underline;
   color: #0263b7;
 }
-.login-card .auth-text span:hover {
+.signup-card .auth-text span:hover {
   color: #2ea1d8;
 }
 @keyframes fadeInDown {
@@ -224,7 +213,7 @@
     transform: translateY(-20px);
   }
 }
-.login-card .alert-overlay {
+.signup-card .alert-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -234,7 +223,7 @@
   z-index: 9999;
   pointer-events: none;
 }
-.login-card .alert {
+.signup-card .alert {
   background-color: #fef3f2;
   color: red;
   font-size: 15px;
@@ -255,25 +244,25 @@
   text-overflow: ellipsis;
   transition: opacity 0.5s ease-in-out;
 }
-.login-card .alert.error {
+.signup-card .alert.error {
   border: 1px solid #f44336;
 }
-.login-card .alert.fade-out {
+.signup-card .alert.fade-out {
   opacity: 0;
 }
-.login-card .alert.success {
+.signup-card .alert.success {
   background-color: #f0f9ff;
   color: #0891b2;
   border: 1px solid #0891b2;
 }
 
 @media (max-width: 1440px) {
-  .login-container {
+  .signup-container {
     background: linear-gradient(to right, transparent 0%, transparent calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% + 0.5px), transparent calc(50% + 0.5px), transparent 100%), linear-gradient(to bottom, transparent 0%, transparent calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% + 0.5px), transparent calc(50% + 0.5px), transparent 100%), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 35%, rgba(183, 210, 246, 0.5) 65%, rgba(183, 210, 246, 0.5) 100%), linear-gradient(to bottom, #ffffff 20%, #c2d8f9 90%);
     background-size: 22px 22px, 22px 22px, 100% 100%, 100% 100%;
     background-blend-mode: multiply, multiply, normal, normal;
   }
-  .login-card {
+  .signup-card {
     background: white;
     padding: 30px;
     border-radius: 14px;
@@ -284,42 +273,42 @@
     display: flex;
     flex-direction: column;
   }
-  .login-card .logo {
+  .signup-card .logo {
     width: 80px;
     margin: 0 auto 25px auto;
     display: block;
   }
-  .login-card h2 {
+  .signup-card h2 {
     font-size: 17px;
     color: #0165b9;
     font-weight: bold;
     text-align: center;
     padding-bottom: 5px;
   }
-  .login-card h2 .highlight {
+  .signup-card h2 .highlight {
     color: #2ea1d8;
   }
-  .login-card h3 {
+  .signup-card h3 {
     font-size: 14px;
     text-align: center;
   }
-  .login-card .sub-text {
+  .signup-card .sub-text {
     font-size: 13px;
     font-weight: 600;
     margin-bottom: 40px;
     text-align: center;
   }
-  .login-card .section-input {
+  .signup-card .section-input {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 8px;
   }
-  .login-card .section-input .label-input {
+  .signup-card .section-input .label-input {
     font-size: 13px;
     font-weight: 600;
   }
-  .login-card .section-input input {
+  .signup-card .section-input input {
     width: 100%;
     height: 37px;
     margin-top: 3px;
@@ -328,7 +317,7 @@
     border-radius: 6px;
     font-size: 13px;
   }
-  .login-card button {
+  .signup-card button {
     justify-content: center;
     margin: 35px auto 0 auto;
     background: #0263b7;
@@ -343,28 +332,53 @@
     max-width: 200px;
     height: 45px;
   }
-  .login-card button:hover {
+  .signup-card button:hover {
     background: #1976d2;
   }
 }
 @media (max-width: 1280px) {
-  .login-container {
+  .signup-container {
     /* // Grid pattern dengan gradasi untuk tablet */
     background: linear-gradient(to right, transparent 0%, transparent calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% + 0.5px), transparent calc(50% + 0.5px), transparent 100%), linear-gradient(to bottom, transparent 0%, transparent calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% + 0.5px), transparent calc(50% + 0.5px), transparent 100%), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 25%, rgba(183, 210, 246, 0.5) 65%, rgba(183, 210, 246, 0.5) 100%), linear-gradient(to bottom, #ffffff 20%, #c2d8f9 90%);
     background-size: 22px 22px, 22px 22px, 100% 100%, 100% 100%;
     background-blend-mode: multiply, multiply, normal, normal;
+    /* // TIDAK perlu height: 100vh */
+    max-height: 90vh;
+    overflow-y: auto;
+    /* // Sembunyikan scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    /* // Chrome, Safari, Opera - SCSS nested syntax */
+  }
+  .signup-container::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    background: transparent;
+  }
+  .signup-container::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .signup-container::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  .signup-card {
+    margin-top: 340px;
   }
 }
 @media (max-width: 1024px) {
-  .login-container {
+  .signup-container {
     /* // Grid pattern dengan gradasi untuk tablet */
     background: linear-gradient(to right, transparent 0%, transparent calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% + 0.5px), transparent calc(50% + 0.5px), transparent 100%), linear-gradient(to bottom, transparent 0%, transparent calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% + 0.5px), transparent calc(50% + 0.5px), transparent 100%), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 25%, rgba(183, 210, 246, 0.5) 65%, rgba(183, 210, 246, 0.5) 100%), linear-gradient(to bottom, #ffffff 18%, #c2d8f9 88%);
     background-size: 30px 30px, 30px 30px, 100% 100%, 100% 100%;
     background-blend-mode: multiply, multiply, normal, normal;
+    max-height: 100vh;
+  }
+  .signup-card {
+    margin-top: 0;
   }
 }
 @media (max-width: 800px) {
-  .login-container {
+  .signup-container {
     /* // Grid pattern dengan gradasi untuk tablet kecil */
     background: linear-gradient(to right, transparent 0%, transparent calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% + 0.5px), transparent calc(50% + 0.5px), transparent 100%), linear-gradient(to bottom, transparent 0%, transparent calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% + 0.5px), transparent calc(50% + 0.5px), transparent 100%), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 25%, rgba(183, 210, 246, 0.5) 65%, rgba(183, 210, 246, 0.5) 100%), linear-gradient(to bottom, #ffffff 15%, #c2d8f9 85%);
     background-size: 30px 30px, 30px 30px, 100% 100%, 100% 100%;
@@ -372,18 +386,26 @@
   }
 }
 @media (max-width: 480px) {
-  .login-container {
+  .signup-container {
     /* // Grid pattern dengan gradasi untuk mobile */
     background: linear-gradient(to right, transparent 0%, transparent calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% + 0.5px), transparent calc(50% + 0.5px), transparent 100%), linear-gradient(to bottom, transparent 0%, transparent calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% + 0.5px), transparent calc(50% + 0.5px), transparent 100%), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 25%, rgba(183, 210, 246, 0.5) 65%, rgba(183, 210, 246, 0.5) 100%), linear-gradient(to bottom, #ffffff 12%, #c2d8f9 82%);
     background-size: 27px 27px, 27px 27px, 100% 100%, 100% 100%;
     background-blend-mode: multiply, multiply, normal, normal;
+    max-height: 100vh;
+  }
+  .signup-card {
+    margin-top: 110px;
   }
 }
 @media (max-width: 380px) {
-  .login-container {
+  .signup-container {
     /* // Grid pattern dengan gradasi untuk mobile */
     background: linear-gradient(to right, transparent 0%, transparent calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% + 0.5px), transparent calc(50% + 0.5px), transparent 100%), linear-gradient(to bottom, transparent 0%, transparent calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% - 0.5px), rgba(183, 210, 246, 0.5) calc(50% + 0.5px), transparent calc(50% + 0.5px), transparent 100%), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 25%, rgba(183, 210, 246, 0.5) 65%, rgba(183, 210, 246, 0.5) 100%), linear-gradient(to bottom, #ffffff 12%, #c2d8f9 82%);
     background-size: 23px 23px, 23px 23px, 100% 100%, 100% 100%;
     background-blend-mode: multiply, multiply, normal, normal;
+    max-height: 100vh;
   }
-}/*# sourceMappingURL=Login.css.map */
+  .signup-card {
+    margin-top: 150px;
+  }
+}/*# sourceMappingURL=Signup.css.map */

@@ -43,18 +43,6 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
-
-    /* // Hide scrollbar */
-    /* scrollbar-width: none; 
-    -ms-overflow-style: none;
-
-    &::-webkit-scrollbar {
-        display: none;
-    }
-
-    @media (max-width: 800px) {
-        background-size: cover;
-    } */
 }
 
 .login-card {
@@ -500,6 +488,29 @@
             100% 100%,
             100% 100%;
         background-blend-mode: multiply, multiply, normal, normal;
+
+        /* // TIDAK perlu height: 100vh */
+        max-height: 100vh;
+        overflow-y: auto;
+
+        /* // Sembunyikan scrollbar */
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        /* // Chrome, Safari, Opera - SCSS nested syntax */
+        &::-webkit-scrollbar {
+            display: none;
+            width: 0;
+            background: transparent;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: transparent;
+        }
     }
 }
 
